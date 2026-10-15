@@ -1,31 +1,31 @@
-# hex-number-field-mathlib
+# hex-number-field-theory
 
 Part of [`hex`](https://github.com/kim-em/hex-dev), a computer algebra
 library for Lean 4. The aim is fast executable code, fully verified, built
 with spec-driven development.
 
-Mathlib companion for
+Theory companion for
 [`hex-number-field`](https://github.com/leanprover/hex-number-field). It
 interprets the executable algebraic-number types in `ℂ` and proves
 fixed-field correspondence, canonicalization, lazy-arithmetic completeness,
 semantic equality, and root-API completeness. It depends on
-`hex-number-field` and the Mathlib companions of its inputs:
-[`hex-resultant-mathlib`](https://github.com/leanprover/hex-resultant-mathlib),
-[`hex-berlekamp-zassenhaus-mathlib`](https://github.com/leanprover/hex-berlekamp-zassenhaus-mathlib),
-[`hex-roots-mathlib`](https://github.com/leanprover/hex-roots-mathlib), and
-[`hex-poly-z-mathlib`](https://github.com/leanprover/hex-poly-z-mathlib).
+`hex-number-field` and the theory companions of its inputs:
+[`hex-resultant-theory`](https://github.com/leanprover/hex-resultant-theory),
+[`hex-berlekamp-zassenhaus-theory`](https://github.com/leanprover/hex-berlekamp-zassenhaus-theory),
+[`hex-roots-theory`](https://github.com/leanprover/hex-roots-theory), and
+[`hex-poly-z-theory`](https://github.com/leanprover/hex-poly-z-theory).
 
 # Quickstart
 
 ```toml
 [[require]]
-name = "hex-number-field-mathlib"
-git = "https://github.com/leanprover/hex-number-field-mathlib.git"
+name = "hex-number-field-theory"
+git = "https://github.com/leanprover/hex-number-field-theory.git"
 rev = "main"
 ```
 
 ```lean
-import HexNumberFieldMathlib
+import HexNumberFieldTheory
 
 open Hex
 
@@ -72,7 +72,7 @@ Everything in this package is proved; it adds no executable operations. The
 lawful `Field AlgebraicNumber` instance is built over the unchanged
 executable data, so proofs about the Mathlib structure are proofs about the
 code that runs. The computational library stays Mathlib-free; complex
-semantics live here. See the [SPEC](SPEC/hex-number-field-mathlib.md) and
+semantics live here. See the [SPEC](SPEC/hex-number-field-theory.md) and
 the Hex manual's number-field chapter for the theorem chain.
 
 # Contributing
